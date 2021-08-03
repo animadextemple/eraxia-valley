@@ -1,0 +1,13 @@
+Name:JOpac
+
+Terms of Use:
+Free to use for commercial and non-commercial projects.
+I'd appreciate if you'd credit me.
+
+Contact Info:
+simon.ratkovic94@gmail.com
+
+How to Use:
+Best to copy data files to newly created project than copy 
+maps and tiles settings to your project.
+

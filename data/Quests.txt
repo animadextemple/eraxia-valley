@@ -1,0 +1,109 @@
+Text that appears outside of the <quest></quest> tags will not display anywhere and can be used for notes if required.
+
+// <quest id:Name of Quest|difficulty|catId>
+// OBJECTIVES separated by commas (leave this blank to not use objectives for a quest)
+// RESOLUTIONS separated by commas use | for line breaks (leave this blank if not using resolutions for a quest)
+// quest description
+// quest description
+// quest description
+// </quest>
+
+			// Histoire - h 8
+
+<quest 81:Choisissez votre Héro(ïne) !|1|0>
+Choisir Démétria.,Choisir Lucius.
+
+Deux personnages apparaisent dans 
+votre maison Démétria et Lucius.
+
+Faites votre choix afin d'avoir 
+une aventure trépidante !
+</quest>
+
+<quest 82:N'arrivons pas en retard !|1|0>
+Aller à l'école.
+
+Maintenant que vous avez choisi
+votre personnage, il est temps 
+d'aller en cours travailler !
+</quest>
+
+<quest 83:Rendez-vous vite en classe.|1|0>
+Rentrer en cours.
+
+Vite ! La cloche à déja sonnée !
+Il faut vite vous rendre dans votre
+salle de cours !
+Le professeur risque d'être 
+énervé ..
+</quest>
+
+<quest 84:Ouste, du balai !|1|0>
+Aller au Laboratoire.
+
+Ni une ni deux, allez au laboratire
+avant de vous refaire disputé !
+</quest>
+
+<quest 85:Premier combat.|1|0>
+Gagnez le combat.
+
+Aïe, ça chauffe. 
+Véronica et Peter vous défis dans
+un combat.
+Allez-vous parvenir à les vaincres ?
+</quest>
+
+<quest 86:Nettoye le laboratoire|1|0>
+Fouiller le laboratoire.
+
+Le professeur était vraiment 
+énervé, alors mieux vaux faire
+ce qu'il vous dit de faire..
+
+Prenez ça comme un exemple 
+avant de faire un grand saut
+dans l'inconnu !
+</quest>
+
+<quest 87:Un autre Monde..|1|0>
+Prendez le Téléporteur.
+
+Alors que vous nettoyer le
+Laboratoire, vous trouvez
+une sorte de machine.
+Prenez le portail et découvrer 
+où ça vous mêne !
+</quest>
+
+			// Personnages - p 16
+
+<quest 161:Winter|1|1>
+Recruter Winter.
+
+Winter se cache quelque par dans 
+\c[2]la cours d'école d'Anulis\c[0].
+</quest>
+
+<quest 162:Pédje|1|1>
+Recruter Pédje.
+
+Pédje se cache quelque par dans 
+\c[2]le Laboratoire d'école d'Anulis\c[0].
+</quest>
+
+			// Évènements - e 5
+
+<quest 51:Genshy's 1|1|1>
+Terminer l'événement.
+
+Il faut fouiller les environs 
+pour découvrir le secret.
+</quest>
+
+<quest 52:Genshy's 2|1|1>
+Terminer l'événement.
+
+Il faut fouiller les environs 
+pour découvrir le secret.
+</quest>
