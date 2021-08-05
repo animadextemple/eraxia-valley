@@ -405,8 +405,8 @@ Galv.QUEST.removeQuest = function(id) {
 Galv.QUEST.sliceArray = function(array,element) {
 	var index = array.indexOf(element);
 	if (index > -1) {
-    	array.splice(index, 1);
-	}
+       array.splice(index, 1);
+   }
 };
 
 // create quest if doesn't exist
@@ -471,26 +471,26 @@ Galv.QUEST.popup = function(id,status,obj) {
 	switch (status) {
 		case -1:
 			return; // -1 is hiding an objective.
-		case 0:
-			var txt = obj != undefined ? Galv.QUEST.txtPopOA : Galv.QUEST.txtPopQA;
-			break;
-		case 1:
-			var txt = obj != undefined ? Galv.QUEST.txtPopOC : Galv.QUEST.txtPopQC;
-			break;
-		case 2:
-			var txt = obj != undefined ? Galv.QUEST.txtPopOF : Galv.QUEST.txtPopQF;
-			break;
-	}
-	if (txt) {
-		if (obj != undefined) {
-			var name = $gameSystem._quests.quest[id].objectives()[obj];
-		} else {
-			var name = $gameSystem._quests.quest[id].name();
-		}
-		SceneManager._scene.createCaptionWindow([x,y],time,[txt + " " + name],[],0);
-	}
-	
-};
+          case 0:
+          var txt = obj != undefined ? Galv.QUEST.txtPopOA : Galv.QUEST.txtPopQA;
+          break;
+          case 1:
+          var txt = obj != undefined ? Galv.QUEST.txtPopOC : Galv.QUEST.txtPopQC;
+          break;
+          case 2:
+          var txt = obj != undefined ? Galv.QUEST.txtPopOF : Galv.QUEST.txtPopQF;
+          break;
+      }
+      if (txt) {
+          if (obj != undefined) {
+             var name = $gameSystem._quests.quest[id].objectives()[obj];
+         } else {
+             var name = $gameSystem._quests.quest[id].name();
+         }
+         SceneManager._scene.createCaptionWindow([x,y],time,[txt + " " + name],[],0);
+     }
+
+ };
 
 
 
@@ -772,7 +772,7 @@ Window_QuestList.prototype.maxItems = function() {
 
 Window_QuestList.prototype.item = function(index) {
     var index = index == undefined ? this.index() : index;
-	var obj = isNaN(this._data[index]) ? this._data[index] : $gameSystem._quests.quest[this._data[index]];
+    var obj = isNaN(this._data[index]) ? this._data[index] : $gameSystem._quests.quest[this._data[index]];
 
     return this._data && index >= 0 ? obj : null;
 };
@@ -798,15 +798,15 @@ Window_QuestList.prototype.makeItemList = function() {
 	this.buildQuestList();
 	switch (this._category) {
 		case 'active':
-			this._data = this.buildQuestList($gameSystem._quests.active);
-			break;
-		case 'completed':
-			this._data = this.buildQuestList($gameSystem._quests.completed);
-			break;
-		case 'failed':
-			this._data = this.buildQuestList($gameSystem._quests.failed);
-			break;
-	}
+     this._data = this.buildQuestList($gameSystem._quests.active);
+     break;
+     case 'completed':
+     this._data = this.buildQuestList($gameSystem._quests.completed);
+     break;
+     case 'failed':
+     this._data = this.buildQuestList($gameSystem._quests.failed);
+     break;
+ }
 };
 
 Window_QuestList.prototype.buildQuestList = function(questList) {
@@ -826,8 +826,8 @@ Window_QuestList.prototype.buildQuestList = function(questList) {
 
 		if (!$gameSystem._quests.categoryHide[this._category][cat]) { // only add it if category isn't hidden
 			list[cat].push(questList[i]);
-		}
-	}
+  }
+}
 
 	// concat lists
 	var final = [];
@@ -842,22 +842,22 @@ Window_QuestList.prototype.buildQuestList = function(questList) {
 Window_QuestList.prototype.drawItem = function(index) {
     var item = this.item(index);
     if (item) {
-		var rect = this.itemRect(index);
-		rect.width -= this.textPadding();
-			
-		if (item.categoryTitle != undefined) {
-			var cat = Galv.QUEST.categories[item.categoryTitle]
-			var txt = cat.name;
-			this.changeTextColor(cat.color);
-			this.drawText(txt,rect.x + 4,rect.y,rect.width);
-			this.drawText("(" + item.count + ")",rect.x,rect.y,rect.width,'right');
-			this.changeTextColor(this.normalColor());
-		} else {
-			var icon = item._id == $gameSystem._quests.tracked ? Galv.QUEST.icon3 : Galv.QUEST['icon' + item._status];
-			this.drawIcon(icon,rect.x,rect.y);
-			this.drawText(item.name(),rect.x + 40,rect.y,rect.width);
-		}
-    }
+      var rect = this.itemRect(index);
+      rect.width -= this.textPadding();
+
+      if (item.categoryTitle != undefined) {
+         var cat = Galv.QUEST.categories[item.categoryTitle]
+         var txt = cat.name;
+         this.changeTextColor(cat.color);
+         this.drawText(txt,rect.x + 4,rect.y,rect.width);
+         this.drawText("(" + item.count + ")",rect.x,rect.y,rect.width,'right');
+         this.changeTextColor(this.normalColor());
+     } else {
+         var icon = item._id == $gameSystem._quests.tracked ? Galv.QUEST.icon3 : Galv.QUEST['icon' + item._status];
+         this.drawIcon(icon,rect.x,rect.y);
+         this.drawText(item.name(),rect.x + 40,rect.y,rect.width);
+     }
+ }
 };
 
 Window_QuestList.prototype.updateHelp = function() {
@@ -867,7 +867,7 @@ Window_QuestList.prototype.updateHelp = function() {
 Window_QuestList.prototype.refresh = function() {
     this.makeItemList();
     this.createContents();
-	this.contents.fontSize = Galv.QUEST.fontSize;
+    this.contents.fontSize = Galv.QUEST.fontSize;
     this.drawAllItems();
 };
 
@@ -884,9 +884,9 @@ Window_QuestInfo.prototype = Object.create(Window_Base.prototype);
 Window_QuestInfo.prototype.constructor = Window_QuestInfo;
 
 Window_QuestInfo.prototype.initialize = function(x,y,width,height) {
-Window_Base.prototype.initialize.call(this, x, y, width, height);
-	this._quest = null;
-	this.refresh();
+    Window_Base.prototype.initialize.call(this, x, y, width, height);
+    this._quest = null;
+    this.refresh();
 };
 
 Window_QuestInfo.prototype.clear = function() {
@@ -902,13 +902,13 @@ Window_QuestInfo.prototype.setItem = function(quest) {
 
 Window_QuestInfo.prototype.refresh = function() {
     this.contents.clear();
-	if (this._quest) {
-	    this.drawQuest(this._quest);
-	} else if ($gameSystem._quests.tracked) {
-		this.drawQuest($gameSystem._quests.quest[$gameSystem._quests.tracked]);
-	} else {
-		this.drawNoQuest();
-	}
+    if (this._quest) {
+       this.drawQuest(this._quest);
+   } else if ($gameSystem._quests.tracked) {
+      this.drawQuest($gameSystem._quests.quest[$gameSystem._quests.tracked]);
+  } else {
+      this.drawNoQuest();
+  }
 };
 
 Window_QuestInfo.prototype.drawHorzLine = function(y) {
@@ -997,23 +997,23 @@ Window_QuestInfo.prototype.drawNoQuest = function() {
 
 if (Galv.QUEST.menuCmd) { // only add this if there's menu command text
 	Galv.QUEST.Window_MenuCommand_addOriginalCommands = Window_MenuCommand.prototype.addOriginalCommands;
-	Window_MenuCommand.prototype.addOriginalCommands = function() {
-		Galv.QUEST.Window_MenuCommand_addOriginalCommands.call(this);
-		this.addQuestCommand();
-	};
-	
-	Window_MenuCommand.prototype.addQuestCommand = function() {
-		var enabled = true;
-		this.addCommand(Galv.QUEST.menuCmd, 'quest', enabled);
-	};
-	
-	Galv.QUEST.Scene_Menu_createCommandWindow = Scene_Menu.prototype.createCommandWindow;
-	Scene_Menu.prototype.createCommandWindow = function() {
-		Galv.QUEST.Scene_Menu_createCommandWindow.call(this);
-		this._commandWindow.setHandler('quest',      this.commandQuestLog.bind(this));
-	};
-	
-	Scene_Menu.prototype.commandQuestLog = function() {
-		Galv.QUEST.viewLog();
-	};
+Window_MenuCommand.prototype.addOriginalCommands = function() {
+  Galv.QUEST.Window_MenuCommand_addOriginalCommands.call(this);
+  this.addQuestCommand();
+};
+
+Window_MenuCommand.prototype.addQuestCommand = function() {
+  var enabled = true;
+  this.addCommand(Galv.QUEST.menuCmd, 'quest', enabled);
+};
+
+Galv.QUEST.Scene_Menu_createCommandWindow = Scene_Menu.prototype.createCommandWindow;
+Scene_Menu.prototype.createCommandWindow = function() {
+  Galv.QUEST.Scene_Menu_createCommandWindow.call(this);
+  this._commandWindow.setHandler('quest',      this.commandQuestLog.bind(this));
+};
+
+Scene_Menu.prototype.commandQuestLog = function() {
+  Galv.QUEST.viewLog();
+};
 };
