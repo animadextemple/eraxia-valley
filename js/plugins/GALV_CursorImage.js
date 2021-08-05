@@ -9,6 +9,7 @@
 //  2016-08-10 - Version 1.6 - updated to work with MV version 1.3
 //  2016-07-10 - Version 1.5 - hid cursor in yanfly battle status window
 //  2016-06-13 - Version 1.4 - removed cursor in shop plugins item number box
+//  2016-06-11 - Version 1.3 - fixed indent for default battle actor name
 //                           - removed cursor from number input
 //  2016-05-12 - Version 1.2 - cursor image added to 'dont exclude' file list
 //  2016-04-11 - Version 1.1 - fixed display bug for initially inactive windows
