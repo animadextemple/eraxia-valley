@@ -1,7 +1,5 @@
 [
 null,
-{"id":1,"list":[{"code":322,"indent":0,"parameters":[8,"Winter_outfits",0,"Winter_outfits",0,"Winter_outfits1"]},{"code":0,"indent":0,"parameters":[]}],"name":"Winter (Defaut)","switchId":82,"trigger":1},
-{"id":2,"list":[{"code":322,"indent":0,"parameters":[8,"Winter_outfits",1,"Winter_outfits",1,"Winter_outfits2"]},{"code":0,"indent":0,"parameters":[]}],"name":"Winter (Chasseuse)","switchId":83,"trigger":1},
-{"id":3,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"3","switchId":1,"trigger":0},
-{"id":4,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"4","switchId":1,"trigger":0}
+{"id":1,"list":[{"code":322,"indent":0,"parameters":[8,"Winter_outfits",0,"Winter_outfits",0,"Winter_outfits1"]},{"code":115,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Winter (Defaut)","switchId":82,"trigger":1},
+{"id":2,"list":[{"code":322,"indent":0,"parameters":[8,"Winter_outfits",1,"Winter_outfits",1,"Winter_outfits2"]},{"code":115,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Winter (Chasseuse)","switchId":83,"trigger":1}
 ]
