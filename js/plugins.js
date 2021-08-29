@@ -8,7 +8,7 @@ var $plugins =
 {"name":"AltSaveScreen","status":true,"description":"Alternative save/load screen layout.","parameters":{}},
 {"name":"WeaponSkill","status":true,"description":"Change skill id of attack for each weapon.","parameters":{}},
 {"name":"MrTS_BattleCharacterLimit","status":true,"description":"Changes character placement for battles.","parameters":{"Max Characters":"8","Characters Per Row":"4","Offset":"120","Vertical Offset":"260","Lower Index":"48","Forward Offset":"100","Row Spacing":"100","Vertical Chara Spacing":"54"}},
-{"name":"CGMV_SplashScreen","status":true,"description":"CGMV Splash Screen","parameters":{"Display Time":"360","Fade Speed":"2","Splashes":"[\"{\\\"Image\\\":\\\"system/Animadex_Temple\\\",\\\"Sound Effect\\\":\\\"\\\",\\\"Sound Delay\\\":\\\"0\\\"}\",\"{\\\"Image\\\":\\\"system/Eraxia_Valley\\\",\\\"Sound Effect\\\":\\\"\\\",\\\"Sound Delay\\\":\\\"0\\\"}\"]"}},
+{"name":"CGMV_SplashScreen","status":true,"description":"CGMV Splash Screen","parameters":{"Display Time":"360","Fade Speed":"2","Splashes":"[\"{\\\"Image\\\":\\\"system/Animadex_Temple\\\",\\\"Sound Effect\\\":\\\"\\\",\\\"Sound Delay\\\":\\\"0\\\"}\",\"{\\\"Image\\\":\\\"system/Thanks\\\",\\\"Sound Effect\\\":\\\"\\\",\\\"Sound Delay\\\":\\\"0\\\"}\",\"{\\\"Image\\\":\\\"system/Eraxia_Valley\\\",\\\"Sound Effect\\\":\\\"\\\",\\\"Sound Delay\\\":\\\"0\\\"}\"]"}},
 {"name":"CGMV_Core","status":true,"description":"Core CGMV Script.","parameters":{}},
 {"name":"CGMV_MessageSystem","status":true,"description":"Adds additional message functionality.","parameters":{}},
 {"name":"CGMV_Toast","status":true,"description":"CGMV Toast Script","parameters":{"Max Window Count":"3","Spacing":"36","Width":"360","Fixed Width":"false","Display Time":"300"}},
