@@ -4,10 +4,10 @@ var $plugins =
 [
 {"name":"SRD_SuperToolsEngine","status":true,"description":"The heart of all maker-style plugins; it adds a playtesting editor that can be opened with F12.","parameters":{"Connect Editor":"true","Auto Open Window":"false","Auto Move Window":"true","Menu Editor Exempt List":"[\"Window_BattleLog\",\"Window_MapName\"]"}},
 {"name":"Community_Basic","status":true,"description":"Plugin used to set basic parameters.","parameters":{"cacheLimit":"20","screenWidth":"816","screenHeight":"624","changeWindowWidthTo":"","changeWindowHeightTo":"","renderingMode":"auto","alwaysDash":"off"}},
-{"name":"AltMenuScreen","status":false,"description":"Alternative menu screen layout.","parameters":{}},
+{"name":"AltMenuScreen","status":true,"description":"Alternative menu screen layout.","parameters":{}},
 {"name":"AltSaveScreen","status":true,"description":"Alternative save/load screen layout.","parameters":{}},
 {"name":"WeaponSkill","status":true,"description":"Change skill id of attack for each weapon.","parameters":{}},
-{"name":"MrTS_BattleCharacterLimit","status":true,"description":"Changes character placement for battles.","parameters":{"Max Characters":"8","Characters Per Row":"4","Offset":"120","Vertical Offset":"260","Lower Index":"48","Forward Offset":"100","Row Spacing":"100","Vertical Chara Spacing":"54"}},
+{"name":"MrTS_BattleCharacterLimit","status":false,"description":"Changes character placement for battles.","parameters":{"Max Characters":"4","Characters Per Row":"4","Offset":"120","Vertical Offset":"260","Lower Index":"48","Forward Offset":"100","Row Spacing":"100","Vertical Chara Spacing":"54"}},
 {"name":"CGMV_SplashScreen","status":true,"description":"CGMV Splash Screen","parameters":{"Display Time":"360","Fade Speed":"2","Splashes":"[\"{\\\"Image\\\":\\\"system/Animadex_Temple\\\",\\\"Sound Effect\\\":\\\"\\\",\\\"Sound Delay\\\":\\\"0\\\"}\",\"{\\\"Image\\\":\\\"system/Thanks\\\",\\\"Sound Effect\\\":\\\"\\\",\\\"Sound Delay\\\":\\\"0\\\"}\",\"{\\\"Image\\\":\\\"system/Eraxia_Valley\\\",\\\"Sound Effect\\\":\\\"\\\",\\\"Sound Delay\\\":\\\"0\\\"}\"]"}},
 {"name":"CGMV_Core","status":true,"description":"Core CGMV Script.","parameters":{}},
 {"name":"CGMV_MessageSystem","status":true,"description":"Adds additional message functionality.","parameters":{}},
